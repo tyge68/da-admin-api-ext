@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "DA Admin API Manager",
+  "version": "0.1.0",
+  "description": "Manage AEM (aem.live) Admin API keys, secrets and webhooks for a da.live site.",
+  "action": { "default_title": "DA Admin API" },
+  "side_panel": { "default_path": "sidepanel.html" },
+  "background": { "service_worker": "background.js" },
+  "permissions": ["sidePanel", "scripting", "tabs", "storage"],
+  "host_permissions": ["https://admin.hlx.page/*", "https://api.aem.live/*", "https://da.live/*"]
+}
